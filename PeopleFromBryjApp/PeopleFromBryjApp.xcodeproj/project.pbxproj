@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F1350D172C0E252C00B4AEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D162C0E252C00B4AEEC /* AppDelegate.swift */; };
-		F1350D1B2C0E252C00B4AEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D1A2C0E252C00B4AEEC /* ViewController.swift */; };
 		F1350D202C0E252E00B4AEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1350D1F2C0E252E00B4AEEC /* Assets.xcassets */; };
 		F1350D232C0E252E00B4AEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1350D212C0E252E00B4AEEC /* LaunchScreen.storyboard */; };
+		F1350D2B2C0E32EF00B4AEEC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D2A2C0E32EF00B4AEEC /* Person.swift */; };
+		F1350D2D2C0E346600B4AEEC /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D2C2C0E346600B4AEEC /* PersonRepository.swift */; };
+		F1350D2F2C0E35F300B4AEEC /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D2E2C0E35F300B4AEEC /* PersonTableViewController.swift */; };
+		F1350D312C0E360F00B4AEEC /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1350D302C0E360F00B4AEEC /* PersonTableViewCell.swift */; };
+		F1D8256A2C0ECC1B00263F62 /* MockPersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D825692C0ECC1B00263F62 /* MockPersonRepository.swift */; };
+		F1D8256C2C0ECE5A00263F62 /* PersonRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8256B2C0ECE5A00263F62 /* PersonRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1350D132C0E252C00B4AEEC /* PeopleFromBryjApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleFromBryjApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1350D162C0E252C00B4AEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1350D1A2C0E252C00B4AEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1350D1F2C0E252E00B4AEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1350D222C0E252E00B4AEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1350D242C0E252E00B4AEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1350D2A2C0E32EF00B4AEEC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F1350D2C2C0E346600B4AEEC /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		F1350D2E2C0E35F300B4AEEC /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		F1350D302C0E360F00B4AEEC /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		F1D825692C0ECC1B00263F62 /* MockPersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersonRepository.swift; sourceTree = "<group>"; };
+		F1D8256B2C0ECE5A00263F62 /* PersonRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +62,50 @@
 		F1350D152C0E252C00B4AEEC /* PeopleFromBryjApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1D825702C0ECF0900263F62 /* Views */,
+				F1D8256F2C0ECEF100263F62 /* ViewControllers */,
+				F1D8256E2C0ECEAD00263F62 /* Repositories */,
+				F1D8256D2C0ECE9100263F62 /* Models */,
 				F1350D162C0E252C00B4AEEC /* AppDelegate.swift */,
-				F1350D1A2C0E252C00B4AEEC /* ViewController.swift */,
 				F1350D1F2C0E252E00B4AEEC /* Assets.xcassets */,
 				F1350D212C0E252E00B4AEEC /* LaunchScreen.storyboard */,
 				F1350D242C0E252E00B4AEEC /* Info.plist */,
 			);
 			path = PeopleFromBryjApp;
+			sourceTree = "<group>";
+		};
+		F1D8256D2C0ECE9100263F62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1350D2A2C0E32EF00B4AEEC /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1D8256E2C0ECEAD00263F62 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F1350D2C2C0E346600B4AEEC /* PersonRepository.swift */,
+				F1D825692C0ECC1B00263F62 /* MockPersonRepository.swift */,
+				F1D8256B2C0ECE5A00263F62 /* PersonRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F1D8256F2C0ECEF100263F62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1350D2E2C0E35F300B4AEEC /* PersonTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F1D825702C0ECF0900263F62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1350D302C0E360F00B4AEEC /* PersonTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1350D1B2C0E252C00B4AEEC /* ViewController.swift in Sources */,
+				F1350D312C0E360F00B4AEEC /* PersonTableViewCell.swift in Sources */,
+				F1350D2F2C0E35F300B4AEEC /* PersonTableViewController.swift in Sources */,
+				F1D8256C2C0ECE5A00263F62 /* PersonRepositoryProtocol.swift in Sources */,
+				F1350D2D2C0E346600B4AEEC /* PersonRepository.swift in Sources */,
+				F1350D2B2C0E32EF00B4AEEC /* Person.swift in Sources */,
 				F1350D172C0E252C00B4AEEC /* AppDelegate.swift in Sources */,
+				F1D8256A2C0ECC1B00263F62 /* MockPersonRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
